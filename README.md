@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-cytoscape/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-cytoscape/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-cytoscape/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-cytoscape/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-cytoscape/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-cytoscape/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-cytoscape/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-cytoscape/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-cytoscape/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-cytoscape/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-cytoscape/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-cytoscape/build/coverage.html/index.html)
 
@@ -35,21 +35,15 @@
 ```json
 
 {
-    "name": "cytoscape",
-    "version": "3.0.0",
-    "license": "MIT",
-    "description": "Graph theory (a.k.a. network) library for analysis and visualisation",
-    "homepage": "http://js.cytoscape.org",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/cytoscape/cytoscape.js.git"
-    },
-    "bugs": {
-        "url": "https://github.com/cytoscape/cytoscape.js/issues"
-    },
     "author": {
         "name": "Max Franz",
         "url": "http://maxfranz.com"
+    },
+    "browser": {
+        "child_process": false
+    },
+    "bugs": {
+        "url": "https://github.com/cytoscape/cytoscape.js/issues"
     },
     "contributors": [
         {
@@ -65,35 +59,8 @@
             "name": "Gerardo Huck"
         }
     ],
-    "keywords": [
-        "graph",
-        "graph-theory",
-        "network",
-        "node",
-        "edge",
-        "vertex",
-        "link",
-        "analysis",
-        "visualisation",
-        "visualization",
-        "requirejs",
-        "amd",
-        "commonjs",
-        "node",
-        "npm",
-        "nodejs",
-        "bower",
-        "jquery",
-        "biojs"
-    ],
-    "engines": {
-        "node": ">=0.6"
-    },
-    "main": "src/index.js",
-    "scripts": {
-        "test": "gulp test && gulp test-browserify",
-        "sniper": "sniper ."
-    },
+    "dependencies": {},
+    "description": "Graph theory (a.k.a. network) library for analysis and visualisation",
     "devDependencies": {
         "benchmark": "^1.0.0",
         "bluebird": "^2.0.2",
@@ -135,6 +102,57 @@
         "vinyl-source-stream": "^1.1.0",
         "watchify": "^3.7.0"
     },
+    "directories": {},
+    "dist": {
+        "shasum": "d47ed5bd7fb0206325cd6343f7fd0e1be0d106b2",
+        "tarball": "https://registry.npmjs.org/cytoscape/-/cytoscape-3.0.0.tgz"
+    },
+    "engines": {
+        "node": ">=0.6"
+    },
+    "gitHead": "9be8ce6207433cc4bb32bf83485ae0805027bb14",
+    "homepage": "http://js.cytoscape.org",
+    "keywords": [
+        "graph",
+        "graph-theory",
+        "network",
+        "node",
+        "edge",
+        "vertex",
+        "link",
+        "analysis",
+        "visualisation",
+        "visualization",
+        "requirejs",
+        "amd",
+        "commonjs",
+        "node",
+        "npm",
+        "nodejs",
+        "bower",
+        "jquery",
+        "biojs"
+    ],
+    "license": "MIT",
+    "main": "src/index.js",
+    "maintainers": [
+        {
+            "name": "cytoscape"
+        },
+        {
+            "name": "maxkfranz"
+        }
+    ],
+    "name": "cytoscape",
+    "optionalDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cytoscape/cytoscape.js.git"
+    },
+    "scripts": {
+        "sniper": "sniper .",
+        "test": "gulp test && gulp test-browserify"
+    },
     "sniper": {
         "js": [
             "http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js",
@@ -142,9 +160,8 @@
         ],
         "first": "images"
     },
-    "browser": {
-        "child_process": false
-    }
+    "version": "3.0.0",
+    "bin": {}
 }
 ```
 
